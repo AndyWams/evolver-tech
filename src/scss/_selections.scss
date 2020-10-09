@@ -1,0 +1,36 @@
+@mixin title {
+  h3 {
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    a {
+      text-decoration: underline;
+      font-size: 14px;
+      color: #f4811f;
+      margin-left: 20px;
+      font-weight: 100;
+      transition: 0.5s ease-in;
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+}
+
+@mixin image_tags {
+  label {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    background: #fff;
+    color: #f4811f;
+    padding: 0em 1.5em;
+    min-width: 159px;
+    height: 47px;
+    position: absolute;
+    bottom: 2.5em;
+    left: 3em;
+    margin: 0;
+  }
+}

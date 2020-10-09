@@ -1,118 +1,317 @@
-<!doctype html>
-<html class="no-js">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Teamapt - Welcome</title>
-
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-
-  <link href="//www.google-analytics.com" rel="dns-prefetch">
-  <link href="//ajax.googleapis.com" rel="dns-prefetch">
-  <link href="assets/css/style.min.css" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-    crossorigin="anonymous">
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-    crossorigin="anonymous">
-
-  <script src="assets/components/modernizr.js"></script>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Welcome | TheLightingHaus</title>
+  <link rel="shortcut icon" href="assets/img/logo-dark.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="assets/components/bootstrap/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/components/animate/animate.css" />
+  <link rel="stylesheet" href="assets/css/style.min.css" />
+  <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <div class="container-fluid">
-      <div class="row h-top">
-        <nav class="">
-          <ul>
-            <li>
-              <a href="#for-banks">For banks</a>
-            </li>
-            <li>
-              <a href="#for-banks">For business</a>
-            </li>
-            <li>
-              <a href="#for-banks">For you</a>
-            </li>
-            <li>
-              <a href="#for-banks">Our Culture</a>
-            </li>
-          </ul>
-        </nav>
+  <main class="main">
+    <header class="main-top">
+      <ul>
+        <li>
+          <ion-icon name="call-outline"></ion-icon> +234 802 501 8557
+        </li>
+        <li>
+          <ion-icon name="location-outline"></ion-icon> 35 Freedom Way, Lekki Phase 1, Lagos, Nigeria
+        </li>
+        <li>
+          <ion-icon name="mail-outline"></ion-icon> sales@thelightinghaus.com
+        </li>
+      </ul>
+    </header>
+    <header class="header-main">
+      <div class="mb-view">
+        <ion-icon src="assets/img/menu.svg"></ion-icon>
       </div>
-      <div class="row h-bottom">
-        <div class="logo">
-          <i class="icon light">
-            <svg width="172" height="41" viewBox="0 0 172 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M52.2132 9.24609H47.1812V11.6141C47.1812 13.3161 46.2562 14.6111 44.3322 14.6111H43.4072V19.5321H46.6632V27.4131C46.6632 31.0761 48.9942 33.3331 52.8052 33.3331C54.5812 33.3331 55.5062 32.9261 55.7282 32.8151V28.1531C55.3952 28.2271 54.8402 28.3381 54.2482 28.3381C53.0272 28.3381 52.2132 27.9311 52.2132 26.4141V19.5321H55.8022V14.6111H52.2132V9.24609Z"
-                fill="white" />
-              <path d="M62.346 21.6041C62.457 20.2351 63.641 18.4961 66.009 18.4961C68.673 18.4961 69.635 20.1981 69.709 21.6041H62.346ZM70.116 26.3771C69.598 27.8201 68.451 28.7821 66.416 28.7821C64.233 28.7821 62.346 27.3021 62.235 25.2301H75.037C75.074 25.1191 75.148 24.2681 75.148 23.4911C75.148 17.5711 71.633 14.0561 65.935 14.0561C61.162 14.0561 56.759 17.8301 56.759 23.7501C56.759 29.9291 61.273 33.5551 66.342 33.5551C71.004 33.5551 73.927 30.8911 74.815 27.7091L70.116 26.3771Z"
-                fill="white" />
-              <path d="M76.169 27.9311C76.169 30.8541 78.5 33.5181 82.533 33.5181C84.975 33.5181 86.751 32.4821 87.713 30.9281C87.713 32.1861 87.676 32.8521 87.713 33.0001H92.745C92.708 32.8151 92.745 31.5941 92.745 30.1511V21.1601C92.745 17.3861 90.562 14.0561 84.605 14.0561C79.203 14.0561 76.761 17.5341 76.539 20.1611L81.423 21.1601C81.534 19.7911 82.607 18.4591 84.568 18.4591C86.344 18.4591 87.269 19.3841 87.269 20.4571C87.269 21.0861 86.936 21.5671 85.937 21.7151L81.608 22.3811C78.574 22.8251 76.169 24.6751 76.169 27.9311ZM83.902 29.4481C82.348 29.4481 81.719 28.5231 81.719 27.5611C81.719 26.2661 82.607 25.7111 83.791 25.5261L87.269 24.9711V25.7851C87.269 28.6341 85.567 29.4481 83.902 29.4481Z"
-                fill="white" />
-              <path d="M100.621 33.0001V22.4181C100.621 20.7531 101.694 19.2361 103.655 19.2361C105.69 19.2361 106.615 20.6051 106.615 22.3441V33.0001H112.165V22.3811C112.165 20.7531 113.238 19.2361 115.236 19.2361C117.234 19.2361 118.159 20.6051 118.159 22.3441V33.0001H123.598V21.0861C123.598 16.0911 120.268 14.0561 116.79 14.0561C114.311 14.0561 112.535 14.8701 111.092 16.9421C110.167 15.1291 108.28 14.0561 105.653 14.0561C103.655 14.0561 101.287 15.0921 100.362 16.7201V14.6111H94.9972V33.0001H100.621Z"
-                fill="white" />
-              <path d="M126 28.2271C126 31.0391 128.331 33.5551 131.957 33.5551C135.139 33.5551 136.915 31.8531 137.692 30.5951C137.692 31.8901 137.618 32.5561 137.692 33.0001H141.059C140.985 32.5561 141.059 31.6311 141.059 30.0771V21.1601C141.059 17.6821 138.987 14.6481 133.659 14.6481C129.811 14.6481 126.74 17.0161 126.37 20.4201L129.7 21.1971C129.922 19.1251 131.291 17.6081 133.733 17.6081C136.434 17.6081 137.581 19.0511 137.581 20.7901C137.581 21.4191 137.285 21.9741 136.212 22.1221L131.402 22.8251C128.331 23.2691 126 25.0451 126 28.2271ZM132.438 30.6321C130.662 30.6321 129.552 29.3741 129.552 28.0421C129.552 26.4511 130.662 25.6001 132.142 25.3781L137.581 24.5641V25.3781C137.581 29.2631 135.287 30.6321 132.438 30.6321Z"
-                fill="white" />
-              <path d="M146.438 40.0301V30.5951C147.4 32.1861 149.472 33.4811 152.21 33.4811C157.427 33.4811 160.498 29.3741 160.498 24.0831C160.498 18.9031 157.649 14.7961 152.321 14.7961C149.435 14.7961 147.326 16.2021 146.364 17.9781V15.2031H142.997V40.0301H146.438ZM156.946 24.0831C156.946 27.7461 154.911 30.3731 151.692 30.3731C148.51 30.3731 146.401 27.7461 146.401 24.0831C146.401 20.5311 148.51 17.8671 151.692 17.8671C154.948 17.8671 156.946 20.5311 156.946 24.0831Z"
-                fill="white" />
-              <path d="M167.931 9.5791H164.749V12.4651C164.749 14.0191 163.935 15.2031 162.011 15.2031H161.049V18.3481H164.453V28.1161C164.453 31.3351 166.377 33.1851 169.411 33.1851C170.595 33.1851 171.483 32.9631 171.779 32.8521V29.8921C171.483 29.9661 170.854 30.0401 170.41 30.0401C168.597 30.0401 167.931 29.2261 167.931 27.5981V18.3481H171.779V15.2031H167.931V9.5791Z"
-                fill="white" />
-              <path d="M13.8328 30.5273L14.6598 31.8584C13.2815 31.0547 11.6275 30.8036 9.99855 31.1803L6.81585 31.9337C1.3777 33.2397 -2.33127 26.5091 1.70349 22.5913L10.7002 13.8013C10.0487 15.1574 9.59758 16.6141 9.44722 18.0958C9.09637 21.0844 9.79806 24.1483 11.427 26.6849L13.8328 30.5273Z"
-                fill="white" />
-              <path d="M33.0288 28.8446L32.9787 33.8926C32.9537 35.3994 32.4775 36.7807 31.5753 37.8858C30.7483 38.8903 29.5955 39.6438 28.2924 39.9954C26.9892 40.3721 25.6109 40.3218 24.408 39.8949C23.0798 39.4177 21.952 38.5136 21.1501 37.2328L16.0377 29.0707L13.5066 25.0775C12.028 22.7419 11.3765 19.9291 11.6772 17.1916C11.8025 16.0113 12.1283 14.856 12.6044 13.751C12.6295 14.203 12.7047 14.6802 12.83 15.1323C13.4816 17.7441 15.4112 19.7282 17.9925 20.4816L28.8186 23.6209C31.1493 24.299 32.8283 26.4086 33.0288 28.8446Z"
-                fill="white" />
-              <path d="M33.104 5.73962V5.86519V6.99533L32.9536 23.5958C32.9536 23.5958 32.9536 23.5707 32.9285 23.5707C32.0264 22.3904 30.7483 21.4862 29.2446 21.0593L18.8194 18.0456C16.8647 17.468 15.4112 15.9611 14.91 13.9771C14.4839 12.3195 14.8097 10.6118 15.7871 9.28072C15.9876 9.00447 16.2131 8.75332 16.4387 8.5273L23.5058 1.62088C25.1598 -0.0115437 27.5405 -0.438486 29.6707 0.465627C31.8008 1.36974 33.129 3.40399 33.104 5.73962Z"
-                fill="white" />
-            </svg>
-
-          </i>
+      <div class="logo"><a href=""><img src="assets/img/logo.svg" alt="main-logo"></a></div>
+      <div class="center">
+        <div class="search-bar">
+          <input type="text" placeholder="Search for a product, category or space.">
+          <span class="tag_">
+            <ion-icon src="./assets/img/search-icon.svg"></ion-icon>
+          </span>
         </div>
-        <div class="social">
-          <a href="http://facebook.com/teamapt"><i class="fab fa-facebook-f"></i></a>
-          <a href="http://twitter.com/teamapt"><i class="fab fa-twitter"></i></a>
-          <a href="http://instagram.com/teamapt"><i class="fab fa-instagram"></i></a>
-          <a href="http://medium.com/teamapt"><i class="fab fa-medium"></i></a>
-        </div>
+      </div>
+      <div class="right">
+        <a href="">
+          <ion-icon src="assets/img/user-icon.svg"></ion-icon> My Account
+        </a>
+        <a href="">
+          <ion-icon src="assets/img/bookmark-icon.svg"></ion-icon> List
+        </a>
+        <a href="">
+          <ion-icon src="assets/img/cart.svg"></ion-icon>CART
+        </a>
+      </div>
+      <div class="mb-view">
+        <ion-icon src="assets/img/cart2.svg"></ion-icon>
+      </div>
+    </header>
+    <div class="navbar_">
+      <ul>
+        <li> <a href="">LIGHTING Explorer</a> </li>
+        <li><a href="">OFFICE</a></li>
+        <li><a href="">HOTEL</a></li>
+        <li><a href="">Home</a></li>
+        <li><a href="">All Products</a></li>
+        <li><a href="">PENDANT LIGHT</a></li>
+        <li><a href="">CHANDELIER</a></li>
+        <li><a href="">SWITCHES & SOCKETS</a></li>
+        <li><a href="">CEILING LAMP</a></li>
+        <li><a href="">WALL LAMP</a></li>
+      </ul>
+    </div>
+    <div class="mb-search-bar">
+      <div class="search-bar">
+        <input type="text" placeholder="Search for a product, category or space.">
+        <span class="tag_">
+          <ion-icon src="./assets/img/search-icon.svg"></ion-icon>
+        </span>
       </div>
     </div>
-  </header>
-  <main>
-    <h2>Hello World</h2>
+    <section class="hero">
+      <div class="intro">
+        <h3>Explore our Showroom</h3>
+        <p>Not sure of what you’re looking for?
+          No worries, use <span>Lighting Xplorer</span> to see what you can get.</p>
+        <a href="" class="btn-link">Proceed to Lighting Xplorer <ion-icon src="assets/img/long-arrow-right.svg">
+          </ion-icon></a>
+      </div>
+      <div class="carousel">
+        <span class="active"></span>
+        <span></span>
+        <span></span>
+      </div>
+    </section>
+    <section class="tier_one">
+      <div class="title">
+        <h3>Shop By Space <a href="">View All</a></h3>
+        <p>Select the type of apartment you want to light up.</p>
+        <div class="list-items">
+          <div class="item" style="background: url('assets/img/img1.png');">
+            <label>HOME</label>
+          </div>
+          <div class="item" style="background: url('assets/img/img2.png');">
+            <label>OFFICE</label>
+          </div>
+          <div class="item" style="background: url('assets/img/img3.png');">
+            <label>HOTEL</label>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="tier_two">
+      <div class="title">
+        <h3>Popular Categories <a href="">View All</a></h3>
+      </div>
+      <div class="list-items">
+        <div class="card" style="background-image: url('./assets/img/img3.png')">
+          <label>CEILING LAMPS</label>
+        </div>
+        <div class="card" style="background-image: url('./assets/img/img4.png')">
+          <label>CEILING LAMPS</label>
+        </div>
+      </div>
+      <div class="controls">
+        <span>
+          <ion-icon name="arrow-back-outline"></ion-icon>
+        </span>
+        <span>
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+        </span>
+      </div>
+    </section>
+    <section class="tier_three">
+      <div class="wrap">
+        <div class="title">
+          <h3>Popular Products <a href="">View All</a></h3>
+        </div>
+        <hr>
+        <div class="grid-container">
+          <div>
+            <div class="items" style="background: url('./assets/img/img6.png');"></div>
+            <h2>Standing Lamp <span>N45,000</span></2>
+          </div>
+          <div>
+            <div class="items" style="background: url('./assets/img/img7.png');"></div>
+            <h2>Wooden Chandelier <span>N45,000</span></2>
+          </div>
+          <div>
+            <div class="items" style="background: url('./assets/img/img8.png');"></div>
+            <h2>Pendant Lamp <span>N15,000</span></2>
+          </div>
+          <div>
+            <div class="items" style="background: url('./assets/img/img6.png');"></div>
+            <h2>Standing Lamp <span>N45,000</span></2>
+          </div>
+          <div>
+            <div class="items" style="background: url('./assets/img/img6.png');"></div>
+            <h2>Standing Lamp <span>N45,000</span></2>
+          </div>
+          <div>
+            <div class="items" style="background: url('./assets/img/img6.png');"></div>
+            <h2>Standing Lamp <span>N45,000</span></2>
+          </div>
+          <div>
+            <div class="items" style="background: url('./assets/img/img8.png');"></div>
+            <h2>Pendant Lamp <span>N15,000</span></2>
+          </div>
+          <div>
+            <div class="items" style="background: url('./assets/img/img7.png');"></div>
+            <h2>Wooden Chandelier <span>N45,000</span></2>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="tier_four alt">
+      <div class="wrap">
+        <div class="title">
+          <h3>Products on Sale <a href="">View All</a></h3>
+        </div>
+        <hr>
+        <div class="grid-container">
+          <div>
+            <div class="items" style="background: url('./assets/img/img6.png');"></div>
+            <h2>Standing Lamp <span>N45,000</span></2>
+          </div>
+          <div>
+            <div class="items" style="background: url('./assets/img/img7.png');"></div>
+            <h2>Wooden Chandelier <span>N45,000</span></2>
+          </div>
+          <div>
+            <div class="items" style="background: url('./assets/img/img8.png');"></div>
+            <h2>Pendant Lamp <span>N15,000</span></2>
+          </div>
+          <div>
+            <div class="items" style="background: url('./assets/img/img6.png');"></div>
+            <h2>Standing Lamp <span>N45,000</span></2>
+          </div>
+          <div>
+            <div class="items" style="background: url('./assets/img/img6.png');"></div>
+            <h2>Standing Lamp <span>N45,000</span></2>
+          </div>
+          <div>
+            <div class="items" style="background: url('./assets/img/img6.png');"></div>
+            <h2>Standing Lamp <span>N45,000</span></2>
+          </div>
+          <div>
+            <div class="items" style="background: url('./assets/img/img8.png');"></div>
+            <h2>Pendant Lamp <span>N15,000</span></2>
+          </div>
+          <div>
+            <div class="items" style="background: url('./assets/img/img7.png');"></div>
+            <h2>Wooden Chandelier <span>N45,000</span></2>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="tier_five">
+      <div class="left">
+        <h3>
+          <ion-icon name="mail-outline"></ion-icon> Join our mailing list
+        </h3>
+        <p>Subscribe to our newsletter to get <br> updates on our latest offers!
+        </p>
+        <form>
+          <div class="input">
+            <input type="text" placeholder="Enter email address here" name="email">
+            <span class="input-bottom-line"></span>
+          </div>
+          <button class="btn-primary_">Subscribe</button>
+        </form>
+      </div>
+      <div class="right" style="background: url('./assets/img/bg-lamp.png');"></div>
+    </section>
+    <footer class="footer">
+      <div class="item_one">
+        <a href=""><img src="./assets/img/logo-alt.svg" alt=""></a>
+        <p>//Talk about the company here//
+          Brighten your nights with modern designer lighting from Thelightinghaus.com Our range features top brands and
+          all the
+          latest contemporary lighting styles to illuminate your home and garden.
+        </p>
+      </div>
+      <div class="item_two">
+        <h3>Quick Links</h3>
+        <ul>
+          <li> <a href="">LIGHTING Explorer</a> </li>
+          <li><a href="">OFFICE</a></li>
+          <li><a href="">HOTEL</a></li>
+          <li><a href="">HOME</a></li>
+          <li><a href="">MY ACCOUNT</a></li>
+          <li><a href="">CART</a></li>
+        </ul>
+      </div>
+      <div class="item_three">
+        <h3>Connect</h3>
+        <ul>
+          <li> <a href="">Connect with us on social media</a> </li>
+          <div class="social-icons">
+            <ul>
+              <li> <a href="">
+                  <ion-icon src="./assets/img/telegram.svg"></ion-icon>
+                </a></li>
+              <li><a href="">
+                  <ion-icon src="./assets/img/whatsapp.svg"></ion-icon>
+                </a></li>
+              <li><a href="">
+                  <ion-icon src="./assets/img/linkedin.svg"></ion-icon>
+                </a></li>
+              <li><a href="">
+                  <ion-icon src="./assets/img/twitter.svg"></ion-icon>
+                </a></li>
+              <li><a href="">
+                  <ion-icon src="./assets/img/facebook.svg"></ion-icon>
+                </a></li>
+              <li><a href="">
+                  <ion-icon src="./assets/img/instagram.svg"></ion-icon>
+                </a></li>
+            </ul>
+          </div>
+        </ul>
+      </div>
+      <div class="item_four">
+        <div class="d-flex">
+          <div class="logo"><img src="./assets/img/logo-dark.svg" alt=""></div>
+          <h3>Download our mobile app <span>Get access to exclusive offers</span></h3>
+        </div>
+        <div class="d-flex">
+          <a href=""><img src="./assets/img/app-store.svg" alt=""></a>
+          <a href=""><img src="./assets/img/play-store.svg" alt=""></a>
+        </div>
+      </div>
+    </footer>
+    <footer class="main-bottom">
+      <ul>
+        <li>
+          <ion-icon name="call-outline"></ion-icon> +234 802 501 8557
+        </li>
+        <li>
+          <ion-icon name="location-outline"></ion-icon> 35 Freedom Way, Lekki Phase 1, Lagos, Nigeria
+        </li>
+        <li>
+          <ion-icon name="mail-outline"></ion-icon> sales@thelightinghaus.com
+        </li>
+      </ul>
+    </footer>
   </main>
-  <footer>
-
-  </footer>
-
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script>
-    window.jQuery || document.write('<script src="assets/components/jquery.js"><\/script>');
-
-  </script>
+  <script src="assets/components/jquery/jquery.min.js"></script>
+  <script src="assets/components/bootstrap/bootstrap.min.js"></script>
   <script src="assets/js/scripts.min.js"></script>
-
-  <script>
-    (function (f, i, r, e, s, h, l) {
-      i['GoogleAnalyticsObject'] = s;
-      f[s] = f[s] || function () {
-        (f[s].q = f[s].q || []).push(arguments)
-      }, f[s].l = 1 * new Date();
-      h = i.createElement(r),
-        l = i.getElementsByTagName(r)[0];
-      h.async = 1;
-      h.src = e;
-      l.parentNode.insertBefore(h, l)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-    ga('create', 'UA-XXXXXXXX-XX');
-    ga('send', 'pageview');
-
-  </script>
-
 </body>
 
 </html>

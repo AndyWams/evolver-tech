@@ -1,0 +1,120 @@
+.sidenav {
+  visibility: hidden;
+  position: fixed;
+  z-index: 0;
+}
+
+@media only screen and (max-width: 991px) {
+  .sidenav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 1000;
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      width: 0%;
+      height: 0%;
+      opacity: 1;
+      background: #fff;
+      transition: height 800ms cubic-bezier(1, 0, 0, 1);
+    }
+
+    .close_ {
+      position: absolute;
+      z-index: 10;
+      top: 1.2em;
+      left: 1.6em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 800ms cubic-bezier(1, 0, 0, 1);
+      transition-delay: 0.8s;
+      ion-icon {
+        font-size: 30px;
+      }
+    }
+    .wrapper {
+      position: relative;
+      z-index: 4;
+      opacity: 0;
+      height: 100%;
+      padding-bottom: 6em;
+      overflow-y: auto;
+      overflow-x: hidden;
+      transition: opacity 800ms cubic-bezier(1, 0, 0, 1);
+      transition-delay: 0.3s;
+      .menu {
+        height: 100%;
+        padding: 8em 4em 3em;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        li {
+          list-style: none;
+          margin: 1.3em 0em;
+          position: relative;
+          a {
+            font-size: 12px;
+            text-transform: uppercase;
+            position: relative;
+            text-decoration: none;
+            line-height: 18px;
+            color: #4f4f4f;
+            &:after {
+              content: "";
+              position: absolute;
+              width: 0;
+              height: 1px;
+              background: #feb93e;
+              left: 0;
+              bottom: 0;
+              transition: 0.3s ease-in;
+            }
+            &:hover {
+              &:after {
+                width: 100%;
+              }
+            }
+          }
+          &:nth-child(1),
+          &:nth-child(2),
+          &:nth-child(3),
+          &:nth-child(4) {
+            a {
+              color: #f4811f;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+
+    &.show {
+      visibility: visible;
+      &:before {
+        right: 0;
+        width: 100%;
+        height: 100%;
+      }
+      &::after {
+        top: 0;
+        right: 0;
+        opacity: 1;
+      }
+      .wrapper,
+      .close_ {
+        opacity: 1;
+      }
+    }
+  }
+}

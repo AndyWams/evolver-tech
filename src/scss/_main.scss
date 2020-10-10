@@ -20,7 +20,7 @@ html {
         font-size: 14px;
         display: flex;
         align-items: center;
-        font-weight: 400;
+        font-weight: 300;
         &:last-child {
           margin-right: 0em;
         }
@@ -208,7 +208,7 @@ html {
     padding: 3em 6.5em 0em;
     @include title;
     p {
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 300;
     }
     .list-items {
@@ -228,9 +228,14 @@ html {
     }
   }
   section.tier_two {
+    ::-webkit-scrollbar {
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      overflow: hidden;
+    }
+
     padding: 1.5em 0em 1em;
     @include title;
-    overflow-x: hidden;
     .title {
       padding: 0em 6.5em;
       h3 {
@@ -243,10 +248,11 @@ html {
     }
     .list-items {
       display: grid;
-      grid-template-columns: auto auto;
+      grid-template-columns: auto auto auto;
       grid-column-gap: 38px;
       align-items: center;
       padding: 0em 0em 0em 6.5em;
+      overflow-x: scroll;
 
       .card {
         width: 705px;
@@ -416,7 +422,8 @@ html {
           margin-top: 0em;
         }
       }
-      .carousel {
+      .carousel,
+      .scroll {
         display: none;
       }
     }
@@ -431,21 +438,23 @@ html {
       }
     }
     section.tier_two {
-      padding: 2.5em 1em;
+      padding: 0em 0em 0em 0em;
       .title {
-        padding: 0em 0em;
+        padding: 0em 1em;
       }
       .list-items {
-        grid-template-columns: auto;
-        padding: 0em 0em 0em 0em;
+        padding: 0em 0em 0em 1em;
+        display: flex;
+        flex-direction: row;
+        display: -webkit-box;
         .card {
-          width: auto;
-          margin-bottom: 1em;
+          width: 300px;
+          height: 300px;
         }
       }
       .controls span {
         &:last-child {
-          margin-right: 0em;
+          margin-right: 1em;
         }
       }
     }
@@ -518,7 +527,7 @@ html {
     }
     section.hero {
       background: none;
-      height: 27vh;
+      height: 30vh;
       .intro {
         padding: 2.5em 3em;
         left: 0em;
@@ -544,21 +553,23 @@ html {
       }
     }
     section.tier_two {
-      padding: 2.5em 3em;
+      padding: 2.5em 0em;
       .title {
-        padding: 0em 0em;
+        padding: 0em 3em;
       }
       .list-items {
-        grid-template-columns: auto auto;
-        padding: 0em 0em 0em 0em;
+        padding: 0em 0em 0em 3em;
+        display: flex;
+        flex-direction: row;
+        display: -webkit-box;
         .card {
-          width: 361px;
-          margin-bottom: 1em;
+          width: 400px;
+          height: 400px;
         }
       }
       .controls span {
         &:last-child {
-          margin-right: 0em;
+          margin-right: 3em;
         }
       }
     }

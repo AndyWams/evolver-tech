@@ -205,25 +205,31 @@ html {
     }
   }
   section.tier_one {
+    ::-webkit-scrollbar {
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      overflow: hidden;
+    }
     padding: 3em 6.5em 0em;
     @include title;
     p {
       font-size: 16px;
       font-weight: 300;
     }
-    .list-items {
-      display: grid;
-      grid-template-columns: auto auto auto;
-      grid-column-gap: 38px;
-      align-items: center;
-      .item {
-        background-repeat: no-repeat !important;
-        background-size: cover !important;
-        width: 384px;
-        height: 272px;
-        border-radius: 5px;
-        position: relative;
-        @include image_tags;
+    .scroll-wrap {
+      .list-items {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-items: center;
+        .item {
+          background-repeat: no-repeat !important;
+          background-size: cover !important;
+          width: 384px;
+          height: 272px;
+          border-radius: 5px;
+          position: relative;
+          @include image_tags;
+        }
       }
     }
   }
@@ -246,24 +252,31 @@ html {
       font-size: 18px;
       font-weight: 300;
     }
-    .list-items {
-      display: grid;
-      grid-template-columns: auto auto auto;
-      grid-column-gap: 38px;
-      align-items: center;
-      padding: 0em 0em 0em 6.5em;
+    .scroll-wrap {
+      overflow: hidden;
       overflow-x: scroll;
+      .list-items {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-items: center;
+        padding: 0em 0em 0em 6.5em;
+        flex-wrap: nowrap;
+        width: 2364px;
 
-      .card {
-        width: 705px;
-        padding: 0 1em;
-        border: none;
-        height: 496px;
-        position: relative;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        @include image_tags;
+        .card {
+          width: 705px;
+          padding: 0 1em;
+          border: none;
+          height: 496px;
+          position: relative;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          @include image_tags;
+          &:last-child {
+            margin-right: 5em;
+          }
+        }
       }
     }
     .controls {
@@ -428,12 +441,22 @@ html {
       }
     }
     section.tier_one {
-      padding: 2.5em 1em;
-      .list-items {
-        grid-template-columns: auto;
-        .item {
-          width: 342px;
-          margin-bottom: 1em;
+      padding: 2.5em 0em;
+      .title {
+        padding: 0em 1em;
+      }
+      .scroll-wrap {
+        overflow: hidden;
+        overflow-x: scroll;
+        .list-items {
+          flex-direction: row;
+          display: -webkit-box;
+          width: 1100px;
+          padding: 0em 0em 0em 1em;
+          .item {
+            width: 342px;
+            margin-right: 1.2em;
+          }
         }
       }
     }
@@ -442,14 +465,17 @@ html {
       .title {
         padding: 0em 1em;
       }
-      .list-items {
-        padding: 0em 0em 0em 1em;
-        display: flex;
-        flex-direction: row;
-        display: -webkit-box;
-        .card {
-          width: 300px;
-          height: 300px;
+      .scroll-wrap {
+        .list-items {
+          padding: 0em 0em 0em 1em;
+          flex-direction: row;
+          display: -webkit-box;
+          width: 975px;
+          .card {
+            width: 300px;
+            height: 300px;
+            margin-right: 1.2em;
+          }
         }
       }
       .controls span {
@@ -469,7 +495,8 @@ html {
         .grid-container {
           padding: 0em 1em;
           grid-template-columns: auto auto;
-          grid-column-gap: 10px;
+          grid-column-gap: 0px;
+          justify-content: space-between;
           .items {
             width: 150px;
             height: 150px;
@@ -542,13 +569,21 @@ html {
       }
     }
     section.tier_one {
-      padding: 2.5em 3em;
-      .list-items {
-        grid-template-columns: auto auto auto;
-        grid-column-gap: 18px;
-        .item {
-          width: 215px;
-          height: 180px;
+      padding: 2.5em 0em;
+      .title {
+        padding: 0em 0em 0 3em;
+      }
+      .scroll-wrap {
+        overflow-x: scroll;
+        .list-items {
+          grid-template-columns: auto auto auto;
+          grid-column-gap: 0px;
+          padding: 0em 0em 0em 3em;
+          width: 1024px;
+          .item {
+            width: 300px;
+            height: 200px;
+          }
         }
       }
     }
@@ -557,14 +592,18 @@ html {
       .title {
         padding: 0em 3em;
       }
-      .list-items {
-        padding: 0em 0em 0em 3em;
-        display: flex;
-        flex-direction: row;
-        display: -webkit-box;
-        .card {
-          width: 400px;
-          height: 400px;
+      .scroll-wrap {
+        .list-items {
+          padding: 0em 0em 0em 3em;
+          display: flex;
+          flex-direction: row;
+          display: -webkit-box;
+          width: 1350px;
+          .card {
+            width: 400px;
+            height: 400px;
+            margin-right: 1.5em;
+          }
         }
       }
       .controls span {
@@ -628,23 +667,31 @@ html {
     }
     section.tier_one {
       padding: 2.5em 3em;
-      .list-items {
-        grid-template-columns: auto auto auto;
-        grid-column-gap: 18px;
+      .scroll-wrap {
+        .list-items {
+          grid-template-columns: auto auto auto;
+          grid-column-gap: 18px;
+        }
       }
     }
     section.tier_two {
-      padding: 2.5em 3em;
+      padding: 2.5em 0em;
       .title {
-        padding: 0em 0em;
+        padding: 0em 3em;
       }
-      .list-items {
-        grid-template-columns: auto auto;
-        padding: 0em 0em 0em 0em;
+      .scroll-wrap {
+        .list-items {
+          grid-template-columns: auto auto auto;
+          padding: 0em 0em 0em 3em;
+          width: 2220px;
+          .card {
+            margin-right: 1em;
+          }
+        }
       }
       .controls span {
         &:last-child {
-          margin-right: 0em;
+          margin-right: 3em;
         }
       }
     }
@@ -661,7 +708,7 @@ html {
           grid-template-columns: auto auto auto;
           grid-column-gap: 10px;
           .items {
-            width: 350px;
+            width: 344px;
           }
         }
       }
@@ -681,13 +728,11 @@ html {
         top: 13em;
       }
     }
-    section.tier_one .list-items .item {
+    section.tier_one .scroll-wrap .list-items .item {
       width: 465px;
       height: 302px;
     }
-    section.tier_two .list-items .card {
-      width: 800px;
-    }
+
     section.tier_three,
     section.tier_four {
       .wrap .grid-container .items {

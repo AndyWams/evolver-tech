@@ -12,10 +12,10 @@ $(function () {
       $(".sidenav").toggleClass("show");
     });
     $(".controls .next").click(function () {
-      $(".tier_two .list-items").animate({ scrollLeft: "+=460" }, 1000);
+      $(".tier_two .scroll-wrap").animate({ scrollLeft: "+=460" }, 1000);
     });
     $(".controls .prev").click(function () {
-      $(".tier_two .list-items").animate({ scrollLeft: "-=460" }, 1000);
+      $(".tier_two .scroll-wrap").animate({ scrollLeft: "-=460" }, 1000);
     });
   });
 });
